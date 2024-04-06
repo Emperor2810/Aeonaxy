@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#login img {
+  height: 778px;
+}
+
+#login > div {
+  margin-right: 20px;
+}
+
+.head {
+  margin-top: 20px;
+  margin-right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  list-style: none;
+}
+
+.head a {
+  text-decoration: none;
+  color: blue;
+}
+
+form {
+  height: 778px;
+  padding: 200px;
+  border-radius: 10px;
+}
+
+.heading {
+  text-align: left;
+}
+
+.heading h3 {
+  font-size: 26px;
+  color: #000000;
+  margin-bottom: 90px;
+}
+
+input[type="text"] {
+  background-color: #eae4e4;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-top: 8px;
+}
+
+a.blue {
+  color: blue;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #ff1d8e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data {
+  width: 48%;
+}
+
+input[type="text"] {
+  width: calc(100% - 10px);
+}
+
+@media (max-width: 600px){
+  #login img {
+    display: none;
+  }
+  form{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .heading h3{
+    margin-top: 80px;
+  }
+}

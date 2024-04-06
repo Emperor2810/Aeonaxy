@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribble</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head> 
+<body>
+    <nav>
+        <div class="logo">
+            <img src="image.jpg" alt="">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Find Work</a></li>
+                <li><a href="#">Learn Design</a></li>
+                <li><a href="#">Go Pro</a></li>
+                <li><a href="#">Hire Designers</a></li>
+            </ul>
+        </div>
+        <div class="defimg">
+            <div class="search-container">
+                <input type="search" placeholder="Search">
+                <i class='bx bx-search search-icon'></i> 
+            </div>
+            <i class='bx bxs-briefcase'></i>
+            <img src="profile.png" id="profile-pic">
+            <label for="file-upload" class="custom-file-upload">Upload</label>
+            <input id="file-upload" type="file" accept="image/jpeg, image/png, image/jpg">
+        </div>
+    </nav>
+
+    <div class="email">
+
+        <div class="head">
+            <h1>Please Verify Your Email...</h1>
+        </div>
+        <div class="imgg">
+            <i class='bx bxs-envelope' ></i>
+        </div>
+
+        <P>Please Verify your email address. We've sent confirmation email to:</P>
+
+        <h5>account@refero.Design</h5>
+        <p class="sep">Click the confirmation link in that email to begin using dribble.</p>
+
+        <p>Didn't receive the email? Check your Spam folder, it may have been caught by a filter. if you still don't see it, you can <h6>resend the confimation email.</h6>
+        <p>Wrong email address? <a href="profile.html"><h6>Change it.</h6></a></p>
+    </div>
+
+
+    <footer>
+        <div class="foot">
+            <div class="logo">
+                <img src="image.jpg" alt="">
+             <p>Dribbble is the world leading community for Creative to share, grow, and get hired</p>
+    
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-whatsapp'></i>
+            <i class='bx bxl-whatsapp'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-pinterest'></i>
+    
+            </div>
+            <div class="designer-section">
+                <h4>For Designers</h4>
+                <ul>
+                    <li><a href="#">Go Pro!</a></li>
+                    <li><a href="#">Explore Design Work</a></li>
+                    <li><a href="#">Design Blog</a></li>
+                    <li><a href="#">Overtime Podcast</a></li>
+                    <li><a href="#">Playoffs</a></li>
+                    <li><a href="#">Weekly Warm-Up</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                    <li><a href="#">Code of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="designer-section">
+                <h4>Hire Designers</h4>
+                <ul>
+                    <li><a href="#">Post a job opening</a></li>
+                    <li><a href="#">post a freelance</a></li>
+                    <li><a href="#">Search for designers</a></li>
+                    <li><a href="#">brands</a></li>
+                    <li><a href="#">Advertise with us</a></li>
+                </ul>
+            </div>
+            <div class="designer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Media kit</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="designer-section">
+                <h4>Directories</h4>
+                <ul>
+                    <li><a href="#">Design jobs</a></li>
+                    <li><a href="#">Designers for hire</a></li>
+                    <li><a href="#">Freelance designers for hire</a></li>
+                    <li><a href="#">tags</a></li>
+                    <li><a href="#">places</a></li>
+                </ul>
+            </div>
+            <div class="designer-section">
+                <h4>Design resources</h4>
+                <ul>
+                    <li><a href="#">Freelancing</a></li>
+                    <li><a href="#">Design Hiring</a></li>
+                    <li><a href="#">Design Portfolio</a></li>
+                    <li><a href="#">Design Education</a></li>
+                    <li><a href="#">Creative Process</a></li>
+                    <li><a href="#">Weekly Warm-Up</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footi">
+            <p>@2023 Dribbble. All rights reserved.</p>
+            <p><span class="number">20501853</span> Short dribbbled</p>
+        </div>
+        
+        
+    </footer>
+    
+    <script>
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("file-upload");
+
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
